@@ -3,8 +3,21 @@ import Controls from "./Controls";
 
 class App extends Component {
   state = {
-    video_url: "",
-    message: ""
+    message: "-- Click a Button --",
+    videos: [
+      {
+        video_url: ""
+      },
+      {
+        video_url: ""
+      },
+      {
+        video_url: ""
+      },
+      {
+        video_url: ""
+      }
+    ]
   };
 
   handlePlayButton = () => {
@@ -12,8 +25,18 @@ class App extends Component {
       message: "Playing..."
     });
   };
-  handleRwButton = () => {};
-  handleFfButton = () => {};
+
+  handleRwButton = () => {
+    this.setState({
+      message: "Back 5s"
+    });
+  };
+
+  handleFfButton = () => {
+    this.setState({
+      message: "Forward 5s"
+    });
+  };
 
   render() {
     return (
