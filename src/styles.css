@@ -1,4 +1,9 @@
+/* Controls Component */
+
 .controls {
+  border: 1px solid black;
+  width: 325px;
+  padding: 10px;
 }
 
 .backBtn,

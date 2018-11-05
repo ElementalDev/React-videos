@@ -7,7 +7,7 @@ class Controls extends Component {
 
   render() {
     return (
-      <div className="controls">
+      <div className="controls container">
         <span className="btnCont">
           <i className="fas fa-backward fa-2x backBtn" id="backBtn" />
         </span>
