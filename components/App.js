@@ -1,7 +1,8 @@
 import React from "react";
+import Controls from "./Controls";
 
 function App() {
-  return <div className="App" />;
+  return <Controls />;
 }
 
 export default App;
